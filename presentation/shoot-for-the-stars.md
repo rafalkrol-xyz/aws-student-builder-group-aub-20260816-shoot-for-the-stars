@@ -252,7 +252,7 @@ resource "aws_instance" "nginx" {
 Learn for free, and be paid to learn later
 ==========================================
 
-All four are free to start (retrieved RETRIEVAL_DATE).
+All four are free to start (retrieved 2026-08-16).
 
 - AWS Cloud Quest: role-play game for hands-on AWS practice ([Cloud Quest](https://aws.amazon.com/training/digital/aws-cloud-quest/))
 - AWS Skill Builder: free digital courses and exam prep ([Skill Builder](https://skillbuilder.aws/))
@@ -268,8 +268,8 @@ How the AWS Free Tier actually works
 
 The AWS Free Tier is the no-charge allowance a new account starts with.
 
-- Credits: up to $200 at sign-up (retrieved RETRIEVAL_DATE) ([Free Tier](https://aws.amazon.com/free/))
-- Ends: after six months, or when credits run out (retrieved RETRIEVAL_DATE) ([Billing guide](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier.html))
+- Credits: up to $200 at sign-up (retrieved 2026-08-16) ([Free Tier](https://aws.amazon.com/free/))
+- Ends: after six months, or when credits run out (retrieved 2026-08-16) ([Billing guide](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier.html))
 - Card: a credit card verifies identity only, no charge ([Billing guide](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier.html))
 
 <!-- end_slide -->
@@ -297,7 +297,7 @@ Delete every billable resource in the same session you create it.
 - S3: empty the bucket, then delete it ([delete bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/delete-bucket.html))
 - SQS: delete the queue you created ([delete queue](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/step-delete-queue.html))
 - Check month-to-date charges in Billing and Cost Management ([Billing guide](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/))
-- `t3.micro` in `ap-south-1`: $0.0112 per hour (retrieved RETRIEVAL_DATE) ([EC2 prices](https://aws.amazon.com/ec2/pricing/on-demand/))
+- `t3.micro` in `ap-south-1`: $0.0112 per hour (retrieved 2026-08-16) ([EC2 prices](https://aws.amazon.com/ec2/pricing/on-demand/))
 
 <!-- end_slide -->
 
@@ -413,7 +413,7 @@ Goal: store one object, pass one message.
 
 - Artifact: object, printed body. 30 minutes.
 - Gone: `aws s3api head-bucket`, `aws sqs get-queue-url` fail.
-- AWS account, CLI. S3, SQS free (retrieved RETRIEVAL_DATE) ([Free Tier](https://aws.amazon.com/free/))
+- AWS account, CLI. S3, SQS free (retrieved 2026-08-16) ([Free Tier](https://aws.amazon.com/free/))
 
 ```bash
 aws sqs send-message \

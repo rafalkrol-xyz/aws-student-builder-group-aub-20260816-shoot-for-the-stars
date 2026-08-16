@@ -2,7 +2,7 @@
 
 **Time:** 30 minutes · **AWS services:** Amazon S3, Amazon SQS · **Free Tier:** both services carry a free-tier
 allowance, and this assignment stays far inside it ([AWS Free Tier](https://aws.amazon.com/free/), retrieved
-RETRIEVAL_DATE)
+2026-08-16)
 
 ## Goal
 
