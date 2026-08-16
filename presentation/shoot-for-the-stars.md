@@ -453,3 +453,26 @@ Four habits that keep you learning after this session.
 Suggested image: a phone showing a podcast, a meetup room and a cricket bat
 ![image:width:60%](../images/PLACEHOLDER-follow-listen-meet.png)
 -->
+
+<!-- end_slide -->
+
+Homework 1: containerise and publish
+====================================
+
+Goal: containerise a page, publish its source.
+
+1. Copy `homework/docker-hi-bengaluru/` into a repository.
+2. `docker build -t hi-ben .`
+3. `docker run -dp 8080:80 --name hi-ben hi-ben`
+4. Push it to GitHub, publicly.
+
+- Artifact: public repo with `Dockerfile`, image `hi-ben`.
+- Works: `curl -s localhost:8080` returns the page.
+- Teardown: `docker rm -f hi-ben`, `docker image rm hi-ben`.
+- Then `docker ps -a`, `docker images` omit `hi-ben`.
+- Docker Desktop, git, GitHub. 30 minutes. No AWS.
+
+<!--
+Suggested image: a Dockerfile becoming a container beside a public repository
+![image:width:60%](../images/PLACEHOLDER-homework-container.png)
+-->
