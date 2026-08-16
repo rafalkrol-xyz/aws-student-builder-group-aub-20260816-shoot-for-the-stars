@@ -13,7 +13,7 @@ options:
 Welcome
 =======
 
-- Topic: Shoot For The Stars
+- Title: Shoot For The Stars
 - Series: Cloud Foundations to Career Futures
 - Group: AWS Student Builder Group — Amity University Bengaluru
 - Amazon Web Services (AWS): The Public Cloud ([what is AWS](https://aws.amazon.com/what-is-aws/))
