@@ -1,0 +1,17 @@
+# Provider plugins and modules downloaded by `terraform init`
+.terraform/
+
+# Local state, and its backups. State can hold resource detail that does not
+# belong in a public repository, so none of it is committed.
+*.tfstate
+*.tfstate.*
+
+# Variable files a student may create locally
+*.tfvars
+*.tfvars.json
+
+# Saved plans
+*.tfplan
+
+# `.terraform.lock.hcl` is deliberately NOT ignored: committing the provider
+# lock file is what makes `terraform init` reproducible for everyone.

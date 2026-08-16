@@ -200,3 +200,79 @@ These four are extension topics beyond the core five services.
 Suggested image: four signposts beyond a cluster of five core icons
 ![image:width:60%](../images/PLACEHOLDER-next-stops.png)
 -->
+
+<!-- end_slide -->
+
+Tools that cost you nothing to start
+====================================
+
+Every tool here has a no-cost option.
+
+- Kiro: an AI editor that codes from your spec; free tier ([Kiro pricing](https://kiro.dev/pricing/))
+- Docker Desktop: runs Docker locally, free for personal use ([Docker pricing](https://www.docker.com/pricing/))
+- GitHub: Free plan, unlimited public and private repositories ([GitHub plans](https://docs.github.com/en/get-started/learning-about-github/githubs-plans))
+- Visual Studio Code: a free editor, the Kiro alternative ([Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview))
+- GitHub Copilot Free: AI coding help at no cost ([Copilot Free plan](https://docs.github.com/en/copilot/about-github-copilot/plans-for-github-copilot))
+
+<!--
+Suggested image: five tool logos each carrying a free badge
+![image:width:60%](../images/PLACEHOLDER-free-tools.png)
+-->
+
+<!-- end_slide -->
+
+Infrastructure as code: three options
+=====================================
+
+Infrastructure as code (IaC): your cloud setup written in files kept in git.
+
+- Terraform: HashiCorp's tool, its own configuration language ([Terraform docs](https://developer.hashicorp.com/terraform/docs))
+- OpenTofu: an open-source fork of Terraform, community governed ([OpenTofu](https://opentofu.org/docs/))
+- Pulumi: same setup in languages you know: Python, TypeScript, Go ([Pulumi](https://www.pulumi.com/docs/))
+
+All three build on AWS; this session uses Terraform.
+
+<!--
+Suggested image: three signposts labelled Terraform, OpenTofu and Pulumi
+![image:width:60%](../images/PLACEHOLDER-iac-options.png)
+-->
+
+<!-- end_slide -->
+
+One server, one web page, in code
+================================
+
+Terraform describes the server in files. `terraform apply` builds it, `terraform destroy` removes it. These lines come from `homework/terraform-ec2-nginx/` ([AWS provider docs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)).
+
+- `resource`: one block per thing you want AWS to create.
+- `user_data`: a script the instance runs once at first boot.
+
+```hcl
+provider "aws" {
+  region = var.aws_region
+}
+
+resource "aws_security_group" "http" {
+  ingress {
+    from_port   = 80
+    to_port     = 80
+    protocol    = "tcp"
+    cidr_blocks = [var.allowed_http_cidr]
+  }
+}
+
+resource "aws_instance" "nginx" {
+  ami                         = local.ami_id
+  instance_type               = var.instance_type
+  vpc_security_group_ids      = [aws_security_group.http.id]
+  associate_public_ip_address = true
+
+  user_data = templatefile("${path.module}/user_data.sh", {
+    session_title = local.tags.Session
+    session_group = "AWS Student Builder Group — Amity University Bengaluru"
+    session_when  = "Sunday 16 August 2026, 15:30 IST"
+  })
+}
+```
+
+**⭐ Official learning material: [Terraform on AWS tutorials](https://developer.hashicorp.com/terraform/tutorials/aws-get-started) ⭐**
