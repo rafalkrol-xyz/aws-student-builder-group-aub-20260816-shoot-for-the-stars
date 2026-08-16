@@ -472,7 +472,30 @@ Goal: containerise a page, publish its source.
 - Then `docker ps -a`, `docker images` omit `hi-ben`.
 - Docker Desktop, git, GitHub. 30 minutes. No AWS.
 
-<!--
-Suggested image: a Dockerfile becoming a container beside a public repository
-![image:width:60%](../images/PLACEHOLDER-homework-container.png)
--->
+<!-- end_slide -->
+
+This is just the beginning
+==========================
+
+<!-- column_layout: [2, 2] -->
+<!-- column: 0 -->
+![sunrise:width:100%](../images/beginning.jpeg)
+<!-- pause -->
+<!-- column: 1 -->
+<!-- jump_to_middle -->
+![padawan:width:100%](../images/baby-steps.jpg)
+
+<!-- end_slide -->
+
+Thank you and let's stay in touch
+=========================
+
+<!-- column_layout: [2, 2] -->
+<!-- column: 0 -->
+<!-- jump_to_middle -->
+# LinkedIn: https://www.linkedin.com/in/rafal-krol/
+## Instagram: https://www.instagram.com/devopsboss/
+### YouTube: https://www.youtube.com/@DevOpsBoss
+
+<!-- column: 1 -->
+![Thank You:width:100%](../images/thank_you.jpeg)
