@@ -365,3 +365,91 @@ Work through these four steps in order.
 Suggested image: a surprised student tracing one line item to its service
 ![image:width:60%](../images/PLACEHOLDER-charge-surprise.png)
 -->
+
+<!-- end_slide -->
+
+Read: four things worth your time
+=================================
+
+Four sources, in the order I would read them.
+
+- The Pragmatic Programmer: habits and craft that outlast any language ([Pragmatic Bookshelf](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/))
+- Inside the IBM PC by Peter Norton: how a computer actually works ([archive.org record](https://archive.org/details/Peter_Norton_Inside_the_IBM_PC_Revised_and_Enlarged))
+- AWS whitepapers: short official papers on services and patterns ([whitepapers](https://aws.amazon.com/whitepapers/))
+- AWS Well-Architected Framework: six pillars for judging any design ([Well-Architected](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html))
+
+<!--
+Suggested image: a stack of four books beside a laptop
+![image:width:60%](../images/PLACEHOLDER-reading-list.png)
+-->
+
+<!-- end_slide -->
+
+Watch: two re:Invent sessions
+=============================
+
+AWS re:Invent is the yearly AWS conference; the talks land on YouTube for free afterwards.
+
+- 2023, Amazon S3 architecture deep dive: how S3 keeps files safe ([S3 deep dive](https://aws.amazon.com/awstv/watch/d33eda30e60/))
+- 2019, Amazon's approach to failing successfully: learning from outages ([failing successfully](https://www.youtube.com/watch?v=yQiRli2ZPxU))
+
+<!--
+Suggested image: two conference talk thumbnails on a laptop screen
+![image:width:60%](../images/PLACEHOLDER-reinvent-sessions.png)
+-->
+
+<!-- end_slide -->
+
+Certification: one exam, then experience
+========================================
+
+Start with one exam, then let practice catch up.
+
+- First exam: AWS Certified Solutions Architect – Associate ([exam page](https://aws.amazon.com/certification/certified-solutions-architect-associate/))
+- AWS recommends at least 12 months of hands-on AWS experience ([exam guide](https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03.html))
+- Earn those 12 months of practice before your next exam.
+- Practice always beats theory; the badge follows the work.
+
+<!-- pause -->
+<!-- column_layout: [2, 2] -->
+<!-- column: 0 -->
+![image:width:100%](../images/saa_1.jpg)
+<!-- pause -->
+<!-- column: 1 -->
+![image:width:100%](../images/saa_2.jpg)
+
+<!-- end_slide -->
+
+Build in public
+===============
+
+Every finished project becomes four public artifacts.
+
+- GitHub repository: the project code plus a runnable README ([GitHub docs](https://docs.github.com/en/repositories))
+- LinkedIn post: a short note on what you built ([LinkedIn help](https://www.linkedin.com/help/linkedin))
+- dev.to article: the tutorial behind that project ([dev.to editor guide](https://dev.to/p/editor_guide))
+- AWS Builder Center article: the same story for AWS builders ([Builder Center](https://builder.aws.com/))
+- Ship small and often; a public trail beats a private résumé.
+
+<!--
+Suggested image: one project fanning out into four published artifacts
+![image:width:60%](../images/PLACEHOLDER-build-in-public.png)
+-->
+
+<!-- end_slide -->
+
+Follow, listen, meet, and tinker
+================================
+
+Four habits that keep you learning after this session.
+
+- Follow Brooke Jamieson on Instagram for cloud and AI ([brooke.bytes](https://www.instagram.com/brooke.bytes/))
+- Hear Akhil Navuluri's The Tech'o'Space Podcast on YouTube, Apple Podcasts, Spotify ([YouTube](https://www.youtube.com/@techspacepodcast), [Apple](https://podcasts.apple.com/us/podcast/the-tech-o-space-podcast/id1833251291), [Spotify](https://open.spotify.com/show/63CX0KazmN5WJzdcLtmDDk))
+- Use AI tools to learn; never outsource your own thinking.
+- Meet humans at local meetups; ask questions in the room.
+- Turn a hobby into practice: scrape cricket scores, translate them.
+
+<!--
+Suggested image: a phone showing a podcast, a meetup room and a cricket bat
+![image:width:60%](../images/PLACEHOLDER-follow-listen-meet.png)
+-->
