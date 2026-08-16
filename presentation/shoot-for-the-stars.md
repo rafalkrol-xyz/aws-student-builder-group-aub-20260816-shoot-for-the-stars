@@ -19,7 +19,7 @@ Welcome
 - Amazon Web Services (AWS): The Public Cloud ([what is AWS](https://aws.amazon.com/what-is-aws/))
 - Online session · Sunday 16 August 2026 · 15:30 India Standard Time (IST)
 
-![welcome:width:100%](../images/welcome.png)
+![welcome:width:100%](../images/welcome.jpeg)
 
 <!-- end_slide -->
 
