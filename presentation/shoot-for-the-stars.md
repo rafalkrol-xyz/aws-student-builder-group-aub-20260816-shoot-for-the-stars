@@ -100,9 +100,12 @@ A container packs your code and everything it needs into one unit that runs the 
 - `docker run`: starts a container from that image on your own machine.
 
 ```bash
-docker build -t <IMAGE_TAG> .
-docker run --rm -p 8080:80 <IMAGE_TAG>
-docker ps
+cd homework/docker-hi-bengaluru
+docker build -t hi-ben .
+docker run --rm -p 8080:80 hi-ben:latest
+curl localhost:8080 # or open localhost:8080 in your browser
+docker ps # do it in a separate terminal window while the container is running
+docker rmi hi-ben:latest
 ```
 
 **⭐ Official learning material: [Docker 101](https://www.docker.com/101-tutorial/) ⭐**
