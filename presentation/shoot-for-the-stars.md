@@ -130,3 +130,71 @@ git push origin main
 ```
 
 **⭐ Official learning material: [GitHub learn](https://learn.github.com/) ⭐**
+
+<!-- end_slide -->
+
+The five AWS services to learn first
+====================================
+
+Two services come before all the others.
+
+- Network: Amazon Virtual Private Cloud (VPC), your isolated network ([VPC](https://aws.amazon.com/vpc/))
+- Every part: AWS Identity and Access Management (IAM) decides who may act ([IAM](https://aws.amazon.com/iam/))
+
+<!--
+Suggested image: a private network box guarded by a permission gate
+![image:width:60%](../images/PLACEHOLDER-vpc-iam.png)
+-->
+
+<!-- end_slide -->
+
+The five AWS services to learn first, continued
+===============================================
+
+Then the three that run your code and hold your data.
+
+- Compute: Amazon Elastic Compute Cloud (EC2) lets you launch virtual servers on demand. ([EC2](https://aws.amazon.com/ec2/))
+- Storage: Amazon Simple Storage Service (S3) keeps files you upload ([S3](https://aws.amazon.com/s3/))
+- Network: Amazon Simple Queue Service (SQS) holds messages between programs ([SQS](https://aws.amazon.com/sqs/))
+
+<!--
+Suggested image: three icons for a server, a file bucket and a message queue
+![image:width:60%](../images/PLACEHOLDER-ec2-s3-sqs.png)
+-->
+
+<!-- end_slide -->
+
+Your first two AWS CLI commands
+===============================
+
+The AWS Command Line Interface (AWS CLI) is a program you type into to run AWS actions from your own machine ([AWS CLI](https://aws.amazon.com/cli/)).
+
+- `aws sts get-caller-identity`: shows which account and identity your commands use.
+- `aws s3 ls`: lists every S3 bucket that same account owns.
+
+```bash
+aws --version
+aws configure list
+aws sts get-caller-identity
+aws s3 ls
+aws s3 ls s3://<BUCKET_NAME>
+```
+
+**⭐ Official learning material: [AWS CLI getting started](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) ⭐**
+
+<!-- end_slide -->
+
+Next stops after the core five
+==============================
+
+These four are extension topics beyond the core five services.
+
+- AWS Lambda: runs short pieces of code without any server to manage ([Lambda](https://aws.amazon.com/lambda/))
+- Amazon Elastic Container Service (ECS): runs containers as long-lived services ([ECS](https://aws.amazon.com/ecs/))
+- AWS Fargate: runs those containers without servers you patch ([Fargate](https://aws.amazon.com/fargate/))
+- Amazon Bedrock: adds hosted AI models to your apps ([Bedrock](https://aws.amazon.com/bedrock/))
+
+<!--
+Suggested image: four signposts beyond a cluster of five core icons
+![image:width:60%](../images/PLACEHOLDER-next-stops.png)
+-->
