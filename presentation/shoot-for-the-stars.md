@@ -399,6 +399,34 @@ Goal: containerise a page, publish its source.
 
 <!-- end_slide -->
 
+Homework 2: one object, one message
+===================================
+
+Goal: store one object, pass one message.
+
+1. `aws s3 mb s3://<BUCKET_NAME>`
+2. `aws s3 cp hi.txt s3://<BUCKET_NAME>/`
+3. `aws sqs create-queue --queue-name <QUEUE_NAME>`
+4. Send one message, then receive it.
+5. `aws s3 ls s3://<BUCKET_NAME>` lists it.
+6. `aws s3 rm --recursive`, `aws s3 rb`, `aws sqs delete-queue`
+
+- Artifact: object, printed body. 30 minutes.
+- Gone: `aws s3api head-bucket`, `aws sqs get-queue-url` fail.
+- AWS account, CLI. S3, SQS free (retrieved RETRIEVAL_DATE) ([Free Tier](https://aws.amazon.com/free/))
+
+```bash
+aws sqs send-message \
+  --queue-url <QUEUE_URL> \
+  --message-body "hi from <YOUR_NAME>"
+
+aws sqs receive-message \
+  --queue-url <QUEUE_URL> \
+  --max-number-of-messages 1
+```
+
+<!-- end_slide -->
+
 This is just the beginning
 ==========================
 
