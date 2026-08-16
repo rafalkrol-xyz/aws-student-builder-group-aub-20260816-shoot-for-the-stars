@@ -62,11 +62,6 @@ Every app you build mixes these four parts.
 - Network: moves requests between users, your code, and stored data.
 - Artificial intelligence (AI): adds prediction and language skills to apps.
 
-<!--
-Suggested image: four labelled boxes: storage, compute, network, AI
-![image:width:60%](../images/PLACEHOLDER-four-parts.png)
--->
-
 <!-- end_slide -->
 
 Linux: find your way around a filesystem
@@ -143,11 +138,6 @@ Two services come before all the others.
 
 ⭐ My video presenting the AWS Console experience: [AWS Primer | Logged in, now what?](https://www.youtube.com/watch?v=zpPDw_abgqc) ⭐
 
-<!--
-Suggested image: a private network box guarded by a permission gate
-![image:width:60%](../images/PLACEHOLDER-vpc-iam.png)
--->
-
 <!-- end_slide -->
 
 The five AWS services to learn first, continued
@@ -158,11 +148,6 @@ Then the three that run your code and hold your data.
 - Compute: Amazon Elastic Compute Cloud (EC2) lets you launch virtual servers on demand. ([EC2](https://aws.amazon.com/ec2/))
 - Storage: Amazon Simple Storage Service (S3) keeps files you upload ([S3](https://aws.amazon.com/s3/))
 - Network: Amazon Simple Queue Service (SQS) holds messages between programs ([SQS](https://aws.amazon.com/sqs/))
-
-<!--
-Suggested image: three icons for a server, a file bucket and a message queue
-![image:width:60%](../images/PLACEHOLDER-ec2-s3-sqs.png)
--->
 
 <!-- end_slide -->
 
@@ -196,11 +181,6 @@ These four are extension topics beyond the core five services.
 - AWS Fargate: runs those containers without servers you patch ([Fargate](https://aws.amazon.com/fargate/))
 - Amazon Bedrock: adds hosted AI models to your apps ([Bedrock](https://aws.amazon.com/bedrock/))
 
-<!--
-Suggested image: four signposts beyond a cluster of five core icons
-![image:width:60%](../images/PLACEHOLDER-next-stops.png)
--->
-
 <!-- end_slide -->
 
 Tools that cost you nothing to start
@@ -214,11 +194,6 @@ Every tool here has a no-cost option.
 - Visual Studio Code: a free editor, the Kiro alternative ([Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview))
 - GitHub Copilot Free: AI coding help at no cost ([Copilot Free plan](https://docs.github.com/en/copilot/about-github-copilot/plans-for-github-copilot))
 
-<!--
-Suggested image: five tool logos each carrying a free badge
-![image:width:60%](../images/PLACEHOLDER-free-tools.png)
--->
-
 <!-- end_slide -->
 
 Infrastructure as code: three options
@@ -231,11 +206,6 @@ Infrastructure as code (IaC): your cloud setup written in files kept in git.
 - Pulumi: same setup in languages you know: Python, TypeScript, Go ([Pulumi](https://www.pulumi.com/docs/))
 
 All three build on AWS; this session uses Terraform.
-
-<!--
-Suggested image: three signposts labelled Terraform, OpenTofu and Pulumi
-![image:width:60%](../images/PLACEHOLDER-iac-options.png)
--->
 
 <!-- end_slide -->
 
@@ -291,11 +261,6 @@ All four are free to start (retrieved RETRIEVAL_DATE).
 
 Builder Center in-person workshops run in sandbox accounts funded by the workshop host ([workshops](https://builder.aws.com/build/workshops)).
 
-<!--
-Suggested image: a game controller, a lab bench and a sandbox account badge
-![image:width:60%](../images/PLACEHOLDER-learn-free.png)
--->
-
 <!-- end_slide -->
 
 How the AWS Free Tier actually works
@@ -306,11 +271,6 @@ The AWS Free Tier is the no-charge allowance a new account starts with.
 - Credits: up to $200 at sign-up (retrieved RETRIEVAL_DATE) ([Free Tier](https://aws.amazon.com/free/))
 - Ends: after six months, or when credits run out (retrieved RETRIEVAL_DATE) ([Billing guide](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier.html))
 - Card: a credit card verifies identity only, no charge ([Billing guide](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier.html))
-
-<!--
-Suggested image: a two hundred dollar credit meter draining over six months
-![image:width:60%](../images/PLACEHOLDER-free-tier.png)
--->
 
 <!-- end_slide -->
 
@@ -326,11 +286,6 @@ Do this before you create your first resource ([AWS Budgets](https://docs.aws.am
 5. Choose email as the notification channel.
 6. Enter your own address, then create the budget.
 
-<!--
-Suggested image: a five dollar budget gauge firing an email alert at eighty percent
-![image:width:60%](../images/PLACEHOLDER-budget-alert.png)
--->
-
 <!-- end_slide -->
 
 Tear down what you build, every time
@@ -344,11 +299,6 @@ Delete every billable resource in the same session you create it.
 - Check month-to-date charges in Billing and Cost Management ([Billing guide](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/))
 - `t3.micro` in `ap-south-1`: $0.0112 per hour (retrieved RETRIEVAL_DATE) ([EC2 prices](https://aws.amazon.com/ec2/pricing/on-demand/))
 
-<!--
-Suggested image: a checklist of resources being deleted before a billing check
-![image:width:60%](../images/PLACEHOLDER-teardown.png)
--->
-
 <!-- end_slide -->
 
 If a charge surprises you
@@ -360,11 +310,6 @@ Work through these four steps in order.
 2. Stop or delete that resource straight away.
 3. Recheck month-to-date charges after a few minutes.
 4. Open a billing support case with AWS Support ([case management](https://docs.aws.amazon.com/awssupport/latest/user/case-management.html))
-
-<!--
-Suggested image: a surprised student tracing one line item to its service
-![image:width:60%](../images/PLACEHOLDER-charge-surprise.png)
--->
 
 <!-- end_slide -->
 
@@ -378,11 +323,6 @@ Four sources, in the order I would read them.
 - AWS whitepapers: short official papers on services and patterns ([whitepapers](https://aws.amazon.com/whitepapers/))
 - AWS Well-Architected Framework: six pillars for judging any design ([Well-Architected](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html))
 
-<!--
-Suggested image: a stack of four books beside a laptop
-![image:width:60%](../images/PLACEHOLDER-reading-list.png)
--->
-
 <!-- end_slide -->
 
 Watch: two re:Invent sessions
@@ -392,11 +332,6 @@ AWS re:Invent is the yearly AWS conference; the talks land on YouTube for free a
 
 - 2023, Amazon S3 architecture deep dive: how S3 keeps files safe ([S3 deep dive](https://aws.amazon.com/awstv/watch/d33eda30e60/))
 - 2019, Amazon's approach to failing successfully: learning from outages ([failing successfully](https://www.youtube.com/watch?v=yQiRli2ZPxU))
-
-<!--
-Suggested image: two conference talk thumbnails on a laptop screen
-![image:width:60%](../images/PLACEHOLDER-reinvent-sessions.png)
--->
 
 <!-- end_slide -->
 
@@ -431,11 +366,6 @@ Every finished project becomes four public artifacts.
 - AWS Builder Center article: the same story for AWS builders ([Builder Center](https://builder.aws.com/))
 - Ship small and often; a public trail beats a private résumé.
 
-<!--
-Suggested image: one project fanning out into four published artifacts
-![image:width:60%](../images/PLACEHOLDER-build-in-public.png)
--->
-
 <!-- end_slide -->
 
 Follow, listen, meet, and tinker
@@ -448,11 +378,6 @@ Four habits that keep you learning after this session.
 - Use AI tools to learn; never outsource your own thinking.
 - Meet humans at local meetups; ask questions in the room.
 - Turn a hobby into practice: scrape cricket scores, translate them.
-
-<!--
-Suggested image: a phone showing a podcast, a meetup room and a cricket bat
-![image:width:60%](../images/PLACEHOLDER-follow-listen-meet.png)
--->
 
 <!-- end_slide -->
 
