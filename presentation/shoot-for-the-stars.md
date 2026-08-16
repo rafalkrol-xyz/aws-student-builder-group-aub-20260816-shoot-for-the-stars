@@ -276,3 +276,92 @@ resource "aws_instance" "nginx" {
 ```
 
 **⭐ Official learning material: [Terraform on AWS tutorials](https://developer.hashicorp.com/terraform/tutorials/aws-get-started) ⭐**
+
+<!-- end_slide -->
+
+Learn for free, and be paid to learn later
+==========================================
+
+All four are free to start (retrieved RETRIEVAL_DATE).
+
+- AWS Cloud Quest: role-play game for hands-on AWS practice ([Cloud Quest](https://aws.amazon.com/training/digital/aws-cloud-quest/))
+- AWS Skill Builder: free digital courses and exam prep ([Skill Builder](https://skillbuilder.aws/))
+- AWS Builder Center workshops: guided labs with community hosts ([workshops](https://builder.aws.com/build/workshops))
+- Pulumi workshops: infrastructure as code in languages you know ([Pulumi](https://www.pulumi.com/resources/))
+
+Builder Center in-person workshops run in sandbox accounts funded by the workshop host ([workshops](https://builder.aws.com/build/workshops)).
+
+<!--
+Suggested image: a game controller, a lab bench and a sandbox account badge
+![image:width:60%](../images/PLACEHOLDER-learn-free.png)
+-->
+
+<!-- end_slide -->
+
+How the AWS Free Tier actually works
+====================================
+
+The AWS Free Tier is the no-charge allowance a new account starts with.
+
+- Credits: up to $200 at sign-up (retrieved RETRIEVAL_DATE) ([Free Tier](https://aws.amazon.com/free/))
+- Ends: after six months, or when credits run out (retrieved RETRIEVAL_DATE) ([Billing guide](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier.html))
+- Card: a credit card verifies identity only, no charge ([Billing guide](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier.html))
+
+<!--
+Suggested image: a two hundred dollar credit meter draining over six months
+![image:width:60%](../images/PLACEHOLDER-free-tier.png)
+-->
+
+<!-- end_slide -->
+
+Set a budget alert before you build
+===================================
+
+Do this before you create your first resource ([AWS Budgets](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-create.html)).
+
+1. Open Billing and Cost Management, then choose Budgets.
+2. Create a budget and pick the cost budget type.
+3. Set the period to monthly and the amount to $5.
+4. Add an alert threshold at 80% of that amount.
+5. Choose email as the notification channel.
+6. Enter your own address, then create the budget.
+
+<!--
+Suggested image: a five dollar budget gauge firing an email alert at eighty percent
+![image:width:60%](../images/PLACEHOLDER-budget-alert.png)
+-->
+
+<!-- end_slide -->
+
+Tear down what you build, every time
+====================================
+
+Delete every billable resource in the same session you create it.
+
+- Terraform: `terraform destroy` removes everything that configuration created.
+- S3: empty the bucket, then delete it ([delete bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/delete-bucket.html))
+- SQS: delete the queue you created ([delete queue](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/step-delete-queue.html))
+- Check month-to-date charges in Billing and Cost Management ([Billing guide](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/))
+- `t3.micro` in `ap-south-1`: $0.0112 per hour (retrieved RETRIEVAL_DATE) ([EC2 prices](https://aws.amazon.com/ec2/pricing/on-demand/))
+
+<!--
+Suggested image: a checklist of resources being deleted before a billing check
+![image:width:60%](../images/PLACEHOLDER-teardown.png)
+-->
+
+<!-- end_slide -->
+
+If a charge surprises you
+=========================
+
+Work through these four steps in order.
+
+1. Open the cost breakdown and find the charging service.
+2. Stop or delete that resource straight away.
+3. Recheck month-to-date charges after a few minutes.
+4. Open a billing support case with AWS Support ([case management](https://docs.aws.amazon.com/awssupport/latest/user/case-management.html))
+
+<!--
+Suggested image: a surprised student tracing one line item to its service
+![image:width:60%](../images/PLACEHOLDER-charge-surprise.png)
+-->
