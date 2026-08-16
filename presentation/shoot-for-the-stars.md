@@ -141,6 +141,8 @@ Two services come before all the others.
 - Network: Amazon Virtual Private Cloud (VPC), your isolated network ([VPC](https://aws.amazon.com/vpc/))
 - Every part: AWS Identity and Access Management (IAM) decides who may act ([IAM](https://aws.amazon.com/iam/))
 
+⭐ My video presenting the AWS Console experience: [AWS Primer | Logged in, now what?](https://www.youtube.com/watch?v=zpPDw_abgqc) ⭐
+
 <!--
 Suggested image: a private network box guarded by a permission gate
 ![image:width:60%](../images/PLACEHOLDER-vpc-iam.png)
