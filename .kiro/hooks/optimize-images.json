@@ -9,7 +9,8 @@
       "action": {
         "type": "agent",
         "prompt": "When committing image files (png, jpg, jpeg) to git, first check their dimensions using `sips -g pixelWidth -g pixelHeight`. If any image exceeds 1920px on its longest side, resize it down to fit within 1920px (maintaining aspect ratio) using `sips --resampleHeightWidthMax 1920` before staging it. This keeps the repo lean without sacrificing usable quality for presentation slides."
-      }
+      },
+      "enabled": true
     }
   ]
 }
