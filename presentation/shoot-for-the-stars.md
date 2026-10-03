@@ -427,6 +427,27 @@ aws sqs receive-message \
 
 <!-- end_slide -->
 
+Homework 3: one server, one web page, in code
+=============================================
+
+Goal: provision one server, serve one page, then remove it.
+
+1. Set a $5 budget alert before you create anything.
+2. `cd homework/terraform-ec2-nginx`
+3. `terraform init`
+4. `terraform plan`
+5. `terraform apply`, then type `yes`
+6. Open the `page_url` output in a browser.
+7. `terraform destroy`, then type `yes`
+
+- Artifact: the nginx page, plus `instance_id` and `public_ip`.
+- Teardown: `terraform destroy` removes instance, group, volume.
+- Gone: `aws ec2 describe-instances` reports `terminated`.
+- AWS account, CLI, Terraform 1.6.0 or later. 45 minutes.
+- `t3.micro` in `ap-south-1`: $0.0112 per hour, billed while it runs (retrieved 2026-08-16) ([EC2 prices](https://aws.amazon.com/ec2/pricing/on-demand/))
+
+<!-- end_slide -->
+
 This is just the beginning
 ==========================
 
