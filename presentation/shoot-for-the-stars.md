@@ -473,3 +473,15 @@ Thank you and let's stay in touch
 
 <!-- column: 1 -->
 ![Thank You:width:100%](../images/thank_you.jpeg)
+
+<!-- end_slide -->
+
+Bonus material
+==============
+
++ Pluralsight's articles
+  + Top skills: https://www.pluralsight.com/resources/blog/upskilling/top-tech-skills-2025-with-tests
+  + Top programming languages: https://www.pluralsight.com/resources/blog/upskilling/top-programming-languages-2025
+  + Top paying jobs: https://www.pluralsight.com/resources/blog/upskilling/best-paying-tech-jobs-2025?utm_source=iterable
++ Dr Werner Vogels, CTO of Amazon
+  + 5 qualities to become the Renaissance Developer in the AI ​​era: https://builder.aws.com/content/36PrCPEn56UGlBrGdcbbeIvlT51/5-qualities-to-become-the-renaissance-developer-in-the-ai-era-aws-reinvent-cto-keynote-summary
